@@ -1,0 +1,62 @@
+/* Reset body margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* Style for the video background */
+.train-video {
+    position: fixed; /* Make video fixed to the viewport */
+    top: 50%;
+    left: 50%;
+    min-width: 100%; /* Cover entire width */
+    min-height: 100%; /* Cover entire height */
+    width: auto; /* Adjust width */
+    height: auto; /* Adjust height */
+    z-index: -1; /* Place behind other content */
+    transform: translate(-50%, -50%); /* Center the video */
+}
+
+/* Navigation bar styling */
+.navbar {
+    position: fixed; /* Fix the navbar to the right side */
+    top: 0; /* Align to the top */
+    right: 0; /* Align to the right */
+    height: 100%; /* Full height */
+    width: 200px; /* Fixed width for the navbar */
+    background-color: rgba(128, 0, 32, 1); /* Semi-transparent background */
+    z-index: 10; /* Ensure navbar is on top of other content */
+    padding: 20px; /* Padding inside navbar */
+}
+
+nav ul {
+    list-style: none; /* Remove list style */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+nav ul li {
+    margin: 15px 0; /* Space between items vertically */
+}
+
+nav ul li a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make links bold */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Home content styling */
+.home-content {
+    margin-right: 220px; /* Offset content to the left of the navbar */
+    position: relative; /* Make it position relative for z-index */
+    z-index: 1; /* Bring content above the video */
+    color: white; /* Text color for readability */
+    text-align: center; /* Center align text */
+    padding: 20px; /* Add some padding */
+}
